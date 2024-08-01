@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "@/components";
 
-const inter = Inter({ subsets: ["latin"] });
+const fontFamily = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +20,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${fontFamily.className} text-white mx-auto z-10`}
+      >
+        <div className="spark fixed z-20"></div>
+        <div className="spark fixed z-20"></div>
+        <div className="spark fixed z-20"></div>
+        <div className="spark fixed z-20"></div>
+        <div className="spark fixed z-20"></div>
+        <div className="spark fixed z-20"></div>
+        <div className="spark fixed z-20"></div>
+        <div className="spark fixed z-20"></div>
+        <div className="spark fixed z-20"></div>
+        <div className="spark fixed z-20"></div>
+        <Navbar />
+        <main className="min-h-screen bg-background">{children}</main>
+      </body>
     </html>
   );
 }

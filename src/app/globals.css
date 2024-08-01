@@ -2,32 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@keyframes sparkAnimation {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes sparkAnimation {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(calc(50vw - 50%)) scale(0.5);
+    opacity: 0;
+  }
+}
+
+.spark {
+  width: 5px;
+  height: 5px;
+  background-color: orange;
+  border-radius: 50%;
+  animation: sparkAnimation 2s linear infinite;
+  animation-delay: calc(-2s * var(--delay));
+}
+
+.spark:nth-child(1) {
+  --delay: 0;
+  left: 20%;
+  top: 100%;
+}
+.spark:nth-child(2) {
+  --delay: 0.2;
+  left: 15%;
+  top: 105%;
+}
+.spark:nth-child(3) {
+  --delay: 0.4;
+  left: 10%;
+  top: 110%;
+}
+.spark:nth-child(4) {
+  --delay: 0.6;
+  left: 52%;
+  top: 115%;
+}
+.spark:nth-child(5) {
+  --delay: 0.8;
+  left: 48%;
+  top: 120%;
+}
+.spark:nth-child(6) {
+  --delay: 1;
+  left: 53%;
+  top: 125%;
+}
+.spark:nth-child(7) {
+  --delay: 1.2;
+  left: 47%;
+  top: 130%;
+}
+.spark:nth-child(8) {
+  --delay: 1.4;
+  left: 50%;
+  top: 135%;
+}
+.spark:nth-child(9) {
+  --delay: 1.6;
+  left: 54%;
+  top: 140%;
+}
+.spark:nth-child(10) {
+  --delay: 1.8;
+  left: 46%;
+  top: 145%;
 }
