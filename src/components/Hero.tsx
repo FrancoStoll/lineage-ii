@@ -19,6 +19,7 @@ export const Hero = () => {
       </video>
       <div className="max-w-7xl mx-auto flex-1 flex flex-col items-start min-h-[calc(100vh-15rem)]  justify-center gap-5 z-10 p-5">
         <h1 className="text-6xl xl:text-8xl text-title">Lineage 2</h1>
+
         <p className="text-title text-4xl">Shield of the kingdom</p>
 
         <p className="text-white text-md max-w-[499px]">
