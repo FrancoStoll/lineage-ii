@@ -12,7 +12,7 @@ export const Navbar = () => {
 
       <MenuDesktop />
 
-      <div className="md:flex gap-10 hidden items-center">
+      <div className="flex gap-8 items-center">
         <Link
           className="hover:brightness-110 hover:animate-pulse font-bold py-3 px-10 border text-sm border-gray-400 rounded-md"
           href="/"

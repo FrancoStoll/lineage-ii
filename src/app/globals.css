@@ -89,3 +89,18 @@
   left: 46%;
   top: 145%;
 }
+
+.fadeIn {
+  animation: fadeIn .5s ease-in;
+}
+
+
+@keyframes fadeIn {  
+  from {  
+      opacity:0;  
+  }  
+
+  to {  
+      opacity:1;  
+  }  
+}
