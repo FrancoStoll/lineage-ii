@@ -13,7 +13,7 @@ interface Props {
 
 export const Card = ({ card }: Props) => {
   return (
-    <div className="z-10 flex p-4 border border-[#eccbac] mt-20 rounded-xl w-full h-auto relative">
+    <div className="z-10 flex flex-col md:flex-row p-4 border border-[#eccbac] mt-20 rounded-xl h-auto relative max-w-[750px]">
       <img
         src="/border.svg"
         alt="border"
@@ -33,7 +33,7 @@ export const Card = ({ card }: Props) => {
         <Link
           target="_blank"
           href={card.videoUrl}
-          className="w-[250px] flex justify-center items-center h-[150px] border border-[#eccbac] rounded-md"
+          className="max-w-[250px] flex justify-center items-center h-[150px] border border-[#eccbac] rounded-md"
         >
           <FaPlay className="" size={26} />
         </Link>

@@ -14,7 +14,7 @@ export const Navbar = () => {
 
       <div className="flex gap-8 items-center">
         <Link
-          className="hover:brightness-110 hover:animate-pulse font-bold py-3 px-10 border text-sm border-gray-400 rounded-md"
+          className="hidden md:block hover:brightness-110 hover:animate-pulse font-bold py-3 px-10 border text-sm border-gray-400 rounded-md"
           href="/"
           type="button"
         >
