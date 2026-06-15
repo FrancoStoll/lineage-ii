@@ -1,7 +1,10 @@
-
-
-export * from './Navbar'
-export * from './Hero'
-export * from './CardGrid'
-export * from './Card'
-export * from './MenuMobile'
+export * from "./Navbar";
+export * from "./Hero";
+export * from "./Stats";
+export * from "./Features";
+export * from "./CardGrid";
+export * from "./Card";
+export * from "./EpicBosses";
+export * from "./Community";
+export * from "./Footer";
+export * from "./MenuMobile";

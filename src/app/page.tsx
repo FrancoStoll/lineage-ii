@@ -1,13 +1,23 @@
-/* eslint-disable @next/next/no-img-element */
-import { CardGrid, Hero } from "@/components";
-
-// import backImg from "/back.jpg";
+import {
+  Hero,
+  Stats,
+  Features,
+  CardGrid,
+  EpicBosses,
+  Community,
+  Footer,
+} from "@/components";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <Stats />
+      <Features />
       <CardGrid />
+      <EpicBosses />
+      <Community />
+      <Footer />
     </>
   );
 }
